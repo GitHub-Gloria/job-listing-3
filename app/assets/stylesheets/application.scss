@@ -77,7 +77,7 @@
  //---------Box---------
 
 .box {
-    background-image: url("header.jpg");
+    background:image-url('header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 50px;
@@ -334,7 +334,7 @@ footer .footer-below {
 }
 .body_resumes {
 
-  background-image: url("resumes.jpg");
+  background:image-url('resumes.jpg');
   background-size: 100% auto;
   margin-top: -20px;
   opacity:0.8;
@@ -384,7 +384,7 @@ footer .footer-below {
 
 .container_first {
 
-  background-image: url("job_show.jpg");
+  background:image-url('job_show.jpg');
   background-size: 100% 460px;
   background-repeat:repeat-x;
   margin-top: -20px;
