@@ -1,0 +1,27 @@
+<div class="background_party">
+
+<div class="LOGIN_TITLE">
+<h3>对我们就是这么任性!</h3>
+</div>
+<br /><br /><br />
+
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :email, required: false, autofocus: true %>
+    <%= f.input :password, required: false %>
+    <div class="REMEMBER_ME"><%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %></div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Log in" %>
+  </div>
+<% end %>
+
+
+<div class="two_links">
+  <%= render "devise/shared/links" %>
+</div>
+
+<br /><br /><br /><br /><br /><br />
+
+</div>

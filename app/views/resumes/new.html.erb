@@ -1,11 +1,19 @@
-<h3> 投交履历到 <%= @job.title %> </h3>
+<div class="body_resumes">
 
-<hr>
 
+<h3 class="magic one"> 投交履历到 <%= @job.title %> </h3>
+
+<hr class="level_0" >
+
+<div id="magictwo-1">
 <%= simple_form_for [@job, @resume] do |f| %>
   <%= f.input :content %>
   <%= f.input :attachment %>
 
-  
-  <%= f.submit "送出" %>
+
+  <div class="magic-3"><%= f.submit "送出" %></div>
 <% end %>
+
+</div>
+
+</div>

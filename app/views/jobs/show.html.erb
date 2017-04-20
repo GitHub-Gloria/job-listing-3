@@ -1,9 +1,33 @@
-<h1> <%= @job.title %> </h1>
+<div class="container_first">
 
-<p>
-  <%= simple_format(@job.description) %>
-</p>
+<h1 class="text-center">  <%= @job.title %> </h1>
 
-<div class="text-center">
-  <%= link_to("投交履历", new_job_resume_path(@job), :style => "font-size:30px; text-decoration:underline;") %>
+<hr class="level">
+
+<div class="jobs_description">
+
+  <div class="text_Job">Job Description</span> </br>
+
+  <div class="text_Job2">
+    <%= simple_format(@job.description) %>
+  </div>
+
 </div>
+
+
+<div class="text_Job3">
+  <ul class="nav nav-pills nav-stacked" style="max-width: 100px; padding-top:20px;">
+    <li class="active"> <%= link_to("Apply Now", new_job_resume_path(@job)) %> </li>
+  </ul>
+</div>
+
+<div class="back_link">
+  <%= link_to 'Back', jobs_path, class: 'btn btn-link'  %>
+</div>
+
+</div>
+
+</div>
+
+
+<!--  dddd-->
